@@ -1,0 +1,14 @@
+.sticky {
+    padding: 0.5em;
+}
+.tags {
+    display: inline;
+}
+.filter {
+    width: 100%;
+    padding: 1em;
+
+}
+.filter span {
+    padding-right: 2em;
+}

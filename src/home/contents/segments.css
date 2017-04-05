@@ -1,0 +1,11 @@
+.segments {
+    padding: 3em;
+}
+.extra span:first-child {
+    padding-right: 1.5em;
+}
+.ui.card, .ui.cards>.card {
+    display: inline-block;
+    width: 350px;
+    margin: 1em
+}

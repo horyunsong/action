@@ -1,0 +1,34 @@
+#title {
+    margin: 0 0 3em 0;
+}
+.ui.vertical.menu {
+    width: 335px;
+}
+.side {
+    display: inline-block;
+}
+.flex {
+    display: flex;
+}
+.flexItem {
+    align-self: flex-start;
+}
+.flexItem:first-child {
+
+}
+.side.flexItem {
+    margin: 0 0 1em 2em;
+}
+.ui[class*="right ribbon"].label.special {
+
+    margin-right: 19px;
+    right: 0px;
+    /*left: 600px;*/
+
+}
+.dropdownWrapper {
+    text-align: right;
+}
+.dropdown {
+    margin: 0 0.5em 1em 3em;
+}

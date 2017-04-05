@@ -2,7 +2,7 @@
  * Created by horyunsong on 04/04/2017.
  */
 import React, { Component } from 'react';
-import { Button } from 'semantic-ui-react';
+import { Button, Divider} from 'semantic-ui-react';
 import './top.css';
 import '../contents/segments.css';
 
@@ -41,11 +41,11 @@ class Filter extends Component {
       <div className="extra">
         <span>
           <Icon name='users' />
-          3
+          13
         </span>
         <span>
           <Icon name='commenting outline' />
-          16
+          6
         </span>
       </div>
     );
@@ -96,10 +96,12 @@ class Filter extends Component {
           </div>
         </div>
 
+        <Divider/>
         <Sort />
 
+
         <div className="segments">
-          {active ? <div></div> : 
+          {active ? <div></div> :
           <Link to="/book">
             <Card
                   image={hero}
@@ -123,7 +125,7 @@ class Filter extends Component {
             <Card
               image={toys}
               header="Sexism Begins in the Toy Aisle"
-              meta='Gender/Sex, Education'
+              meta='Gender/Sex, Education, Consumer'
               description="Girls nurture, boys build. Girls play with dolls, boys play with trucks. Toys are the first education and dangerous tool for sexism."
               extra={extra}
             />

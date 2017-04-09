@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Container, Divider, Segment, Grid, Image, Label, Button, Icon, Header, Menu, Dropdown } from 'semantic-ui-react';
 import './books.css';
+import Sticky from '../home/top/sticky.js';
 
 import toys from '../images/toys2.jpg';
 import nytimes from '../images/nytimes.jpg';
@@ -33,6 +34,7 @@ class Book extends Component {
 
     return (
       <div>
+        <Sticky />
         <Image src={toys} fluid/>
         <Segment id="title">
           <Grid>
@@ -58,7 +60,7 @@ class Book extends Component {
               </span><br/>
                     <span>
                 <Icon name='commenting outline' />
-                6 Comments
+                18 Comments
               </span>
             </Grid.Column>
           </Grid>
@@ -124,7 +126,7 @@ class Book extends Component {
                 <Menu.Item name='Retail Boycott' active={activeItem === 'Retail Boycott'} onClick={this.handleItemClick} />
                 <Menu.Item name='Share this Issue' active={activeItem === 'Share this Issue'} onClick={this.handleItemClick} />
               </Menu>
-              <Button circular icon='users' content='I Acted!' label="13"/>
+              <Button circular icon='users' content='I Acted!' label="13" />
             </div>
 
             <div className="side flexItem">

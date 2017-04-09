@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Header from './top/header.js';
+import Sticky from './top/sticky.js';
 import Filter from './top/filter.js';
 
 class Home extends Component {
@@ -8,7 +8,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Sticky />
         <Filter />
       </div>
     );

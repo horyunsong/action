@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 import { Input, Menu } from 'semantic-ui-react';
 import './top.css';
 
-class Header extends Component {
+class Sticky extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -34,4 +34,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default Sticky;

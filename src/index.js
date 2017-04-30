@@ -13,7 +13,7 @@ function scrollTop () {
 ReactDOM.render(
   <Router onUpdate={scrollTop}>
     <div>
-      <Route path="/" component={App} />
+      <Route exact path="/" component={App} />
       <Route path="/book" component={Book}/>
     </div>
   </Router>,

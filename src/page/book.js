@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { Container, Divider, Segment, Grid, Image, Label, Button, Icon, Header, Menu, Dropdown } from 'semantic-ui-react';
 import './books.css';
-import Sticky from '../home/top/sticky.js';
 
 import toys from '../images/toys2.jpg';
 import nytimes from '../images/nytimes.jpg';
@@ -11,12 +10,20 @@ import disqus from '../images/disqus.png';
 
 class Book extends Component {
 
-  state = { activeItem: 'Let Toys be Toys Campaign' }
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeItem: 'Let Toys be Toys Campaign'
+    }
+  }
+
+  handleItemClick = (e, name ) => {
+    this.setState({ activeItem: name })
+  }
 
   render() {
-    const { activeItem } = this.state
+    const activeItem = this.state.activeItem;
 
     const sort = [
       { key: 'Trending', text: 'Trending', value: 'Trending' },
@@ -34,7 +41,6 @@ class Book extends Component {
 
     return (
       <div>
-        <Sticky />
         <Image src={toys} fluid/>
         <Segment id="title">
           <Grid>
@@ -98,7 +104,7 @@ class Book extends Component {
                 </Segment>
               </Grid.Column>
               <Grid.Column>
-                <iframe width="357px" height="240px" src="https://www.youtube.com/embed/TN2wPkU8prU" frameborder="0" allowfullscreen></iframe>
+                <iframe width="357px" height="240px" src="https://www.youtube.com/embed/TN2wPkU8prU" frameBorder="0" allowFullScreen></iframe>
               </Grid.Column>
 
             </Grid.Row>
@@ -147,8 +153,8 @@ class Book extends Component {
               </Segment>
               <Segment>
                 <Label as='a' color='blue' ribbon='right' className="special">Twitter</Label>
-                <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Teachers! Help children fulfil their potential: our 10 ways to challenge gender stereotypes at school and nursery <a href="https://t.co/02J0LxtBAy">https://t.co/02J0LxtBAy</a> <a href="https://t.co/p4feNzyMha">pic.twitter.com/p4feNzyMha</a></p>&mdash; Let Toys Be Toys (@LetToysBeToys) <a href="https://twitter.com/LetToysBeToys/status/847070110955323396">March 29, 2017</a></blockquote>
-                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <blockquote className="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Teachers! Help children fulfil their potential: our 10 ways to challenge gender stereotypes at school and nursery <a href="https://t.co/02J0LxtBAy">https://t.co/02J0LxtBAy</a> <a href="https://t.co/p4feNzyMha">pic.twitter.com/p4feNzyMha</a></p>&mdash; Let Toys Be Toys (@LetToysBeToys) <a href="https://twitter.com/LetToysBeToys/status/847070110955323396">March 29, 2017</a></blockquote>
+                <script async src="//platform.twitter.com/widgets.js" charSet="utf-8"></script>
               </Segment>
             </div>
           </div>

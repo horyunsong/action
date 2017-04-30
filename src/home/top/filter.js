@@ -76,6 +76,9 @@ class Filter extends Component {
             <Button toggle active={false} onClick={this.handleClick}>
               Religion
             </Button>
+            <Button toggle active={false} onClick={this.handleClick}>
+              Other
+            </Button>
           </div>
         </div>
         <div className="filter">
